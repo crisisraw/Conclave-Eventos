@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CÓNCLAVE | Banquetería, Taquizas, Cristalería y Servicio de Meseros</title>
+  <meta name="description" content="Cónclave: Banquetes de 3 tiempos, taquizas de 5 guisos, cristalería y servicio de meseros desde 50 personas. Cotiza tu evento directo por WhatsApp." />
+
+  <!-- Open Graph para vista previa al compartir en WhatsApp y redes -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CÓNCLAVE | Banquetería, Taquizas y Eventos desde 50 Personas" />
+  <meta property="og:description" content="Banquetes de 3 tiempos, taquizas con 5 guisos, cristalería y meseros incluidos desde 50 invitados. Arma tu paquete y cotiza por WhatsApp." />
+  <meta property="og:image" content="logo.jpg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#0E0D0C',
+            charcoal: '#171513',
+            ivory: '#F6F3EC',
+            sand: '#EAE4D7',
+            gold: '#C5A059',
+            goldLight: '#D8BA7E',
+            ink: '#1A1816',
+            muted: '#666058'
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .chip-selected {
+      background-color: #171513 !important;
+      color: #F6F3EC !important;
+      border-color: #C5A059 !important;
+    }
+  </style>
+</head>
+<body class="bg-ivory text-ink font-sans antialiased selection:bg-gold selection:text-obsidian">
+
+  <!-- Navegación -->
+  <header class="sticky top-0 z-40 bg-obsidian/95 backdrop-blur border-b border-gold/25 text-ivory">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-3">
+        <img src="logo.jpg" alt="Logo Cónclave" onerror="this.style.display='none'" class="h-10 w-10 rounded-full object-cover border border-gold/60 bg-ivory" />
+        <span class="font-serif tracking-[0.2em] text-base sm:text-lg font-semibold text-goldLight">CÓNCLAVE</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-xs uppercase tracking-[0.16em] text-ivory/80">
+        <a href="#servicios" class="hover:text-goldLight transition">Servicios</a>
+        <a href="#banquete" class="hover:text-goldLight transition">3 Tiempos</a>
+        <a href="#taquizas" class="hover:text-goldLight transition">Taquizas</a>
+        <a href="#armador" class="hover:text-goldLight transition">Arma tu Paquete</a>
+      </nav>
+
+      <a href="#armador" class="bg-gold hover:bg-goldLight text-obsidian font-semibold text-xs uppercase tracking-wider px-4 py-2.5 rounded-sm transition">
+        Cotizar Ahora
+      </a>
+    </div>
+  </header>
+
+  <!-- Portada / Hero -->
+  <section id="inicio" class="bg-obsidian text-ivory py-16 sm:py-24 border-b border-gold/20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold/40 bg-charcoal text-goldLight text-xs tracking-widest uppercase">
+          Atención desde 50 personas · Eventos sociales y empresariales
+        </div>
+        <h1 class="font-serif text-3xl sm:text-5xl leading-tight tracking-wide text-ivory">
+          Alta cocina, taquizas y servicio integral para tu evento.
+        </h1>
+        <p class="text-ivory/75 text-base sm:text-lg leading-relaxed max-w-2xl">
+          En <strong class="text-ivory font-semibold">Cónclave</strong> cuidamos cada detalle de mesa y cocina: banquetes de 3 tiempos, taquizas de 5 guisos, cristalería y meseros incluidos desde 50 invitados.
+        </p>
+
+        <div class="flex flex-wrap gap-3 pt-1">
+          <a href="#armador" class="bg-gold hover:bg-goldLight text-obsidian font-semibold text-sm px-6 py-3.5 rounded-sm transition">
+            Arma tu Paquete y Cotiza
+          </a>
+          <a href="#banquete" class="border border-ivory/30 hover:border-goldLight text-ivory hover:text-goldLight text-sm px-6 py-3.5 rounded-sm transition">
+            Ver Menú y Servicios
+          </a>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 pt-4 border-t border-ivory/10 text-xs sm:text-sm">
+          <div>
+            <p class="font-serif text-goldLight text-lg sm:text-xl font-semibold">50+</p>
+            <p class="text-ivory/65">Invitados mínimos</p>
+          </div>
+          <div>
+            <p class="font-serif text-goldLight text-lg sm:text-xl font-semibold">3 Tiempos</p>
+            <p class="text-ivory/65">Con plato, vaso jaibolero y cubierto</p>
+          </div>
+          <div>
+            <p class="font-serif text-goldLight text-lg sm:text-xl font-semibold">Meseros</p>
+            <p class="text-ivory/65">1 cada 50 personas en banquete</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5">
+        <div class="bg-charcoal border border-gold/30 rounded-sm p-6 sm:p-8 text-center space-y-4 shadow-2xl">
+          <img src="logo.jpg" alt="Cónclave Logo" onerror="this.style.display='none'" class="w-28 h-28 mx-auto rounded-full object-cover border-2 border-gold bg-ivory p-1" />
+          <p class="font-serif text-xl tracking-[0.2em] text-goldLight">CÓNCLAVE</p>
+          <p class="text-sm text-ivory/75 leading-relaxed">
+            Banquetería · Taquizas · Cristalería · Meseros · Barra de Bebidas (cotización extra)
+          </p>
+          <div class="pt-2 border-t border-ivory/10 text-xs text-ivory/60">
+            * Los paquetes base no incluyen bebidas alcohólicas. Puedes solicitar cotización extra de bebidas o barra.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pilares de Servicio -->
+  <section id="servicios" class="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="max-w-2xl mb-10">
+      <p class="text-xs uppercase tracking-[0.2em] text-gold font-semibold mb-2">Lo que resolvemos</p>
+      <h2 class="font-serif text-2xl sm:text-4xl text-ink">Un solo equipo para todo tu evento</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="bg-white border border-sand p-6 rounded-sm space-y-2.5">
+        <p class="font-serif text-lg text-ink">Banquete de 3 Tiempos</p>
+        <p class="text-sm text-muted leading-relaxed">
+          Entremés, entrada o sopa y platillo principal con 3 guarniciones. Incluye plato, vaso jaibolero y cubierto.
+        </p>
+      </div>
+      <div class="bg-white border border-sand p-6 rounded-sm space-y-2.5">
+        <p class="font-serif text-lg text-ink">Taquizas (5 Guisos)</p>
+        <p class="text-sm text-muted leading-relaxed">
+          Elige 5 guisos tradicionales o de especialidad entre 17 opciones para eventos desde 50 personas.
+        </p>
+      </div>
+      <div class="bg-white border border-sand p-6 rounded-sm space-y-2.5">
+        <p class="font-serif text-lg text-ink">Cristalería y Loza</p>
+        <p class="text-sm text-muted leading-relaxed">
+          Montaje limpio y completo con plato, vaso jaibolero y cubierto en banquete, más opciones adicionales.
+        </p>
+      </div>
+      <div class="bg-white border border-sand p-6 rounded-sm space-y-2.5">
+        <p class="font-serif text-lg text-ink">Meseros y Bebidas</p>
+        <p class="text-sm text-muted leading-relaxed">
+          En banquete incluye 1 mesero desde 50 personas (+1 por cada 50 más). Bebidas alcohólicas y barra en cotización extra.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detalle Banquete 3 Tiempos -->
+  <section id="banquete" class="py-14 bg-sand/60 border-y border-sand">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <p class="text-xs uppercase tracking-[0.2em] text-gold font-semibold mb-1">Banquetería · Desde 50 Personas</p>
+          <h2 class="font-serif text-2xl sm:text-4xl text-ink">Banquete de 3 Tiempos</h2>
+        </div>
+        <p class="text-sm text-muted max-w-md">
+          Incluye: <strong>Entremés</strong>, <strong>Entrada/Sopa</strong>, <strong>Platillo principal con 3 guarniciones</strong>, <strong>plato, vaso jaibolero y cubierto</strong>, además de <strong>1 mesero</strong> (y 1 más por cada 50 personas adicionales).
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-ivory border border-sand p-6 rounded-sm space-y-3">
+          <h3 class="font-serif text-lg text-ink border-b border-sand pb-2">1. Entremeses</h3>
+          <ul id="lista-entremeses" class="text-xs sm:text-sm text-muted space-y-1.5 max-h-64 overflow-y-auto pr-1"></ul>
+        </div>
+        <div class="bg-ivory border border-sand p-6 rounded-sm space-y-3">
+          <h3 class="font-serif text-lg text-ink border-b border-sand pb-2">2. Entradas y Sopas</h3>
+          <ul id="lista-entradas" class="text-xs sm:text-sm text-muted space-y-1.5 max-h-64 overflow-y-auto pr-1"></ul>
+        </div>
+        <div class="bg-ivory border border-sand p-6 rounded-sm space-y-3">
+          <h3 class="font-serif text-lg text-ink border-b border-sand pb-2">3. Platillos (con 3 guarniciones)</h3>
+          <ul id="lista-platillos" class="text-xs sm:text-sm text-muted space-y-1.5 max-h-64 overflow-y-auto pr-1"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detalle Taquizas -->
+  <section id="taquizas" class="py-14 max-w-6xl mx-auto px-4 sm:px-6 space-y-6">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div>
+        <p class="text-xs uppercase tracking-[0.2em] text-gold font-semibold mb-1">Taquizas · Desde 50 Personas</p>
+        <h2 class="font-serif text-2xl sm:text-4xl text-ink">17 Guisos a Elegir (5 por Taquiza)</h2>
+      </div>
+      <p class="text-sm text-muted max-w-md">
+        Normalmente cada taquiza incluye <strong>5 guisos</strong> a elegir para un mínimo de <strong>50 personas</strong>.
+      </p>
+    </div>
+
+    <div id="lista-guisos" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-2.5 text-sm text-ink"></div>
+  </section>
+
+  <!-- Arma tu Paquete (Configurador Interactivo -> WhatsApp) -->
+  <section id="armador" class="py-16 sm:py-24 bg-obsidian text-ivory border-t border-gold/25">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="max-w-2xl mb-10 space-y-2">
+        <p class="text-xs uppercase tracking-[0.2em] text-goldLight font-semibold">Cotizador en Línea</p>
+        <h2 class="font-serif text-2xl sm:text-4xl text-ivory">Arma tu paquete como lo necesitas</h2>
+        <p class="text-sm sm:text-base text-ivory/75">
+          Configura tu servicio desde 50 personas y envía tu selección completa directo a nuestro WhatsApp para recibir cotización.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <!-- Columna Izquierda: Configuración -->
+        <div class="lg:col-span-8 bg-charcoal border border-gold/25 rounded-sm p-6 sm:p-8 space-y-8">
+
+          <!-- Tipo de Servicio -->
+          <div class="space-y-3">
+            <label class="block text-xs uppercase tracking-[0.16em] text-goldLight font-semibold">
+              1. Tipo de servicio
+            </label>
+            <div class="grid sm:grid-cols-2 gap-3">
+              <button type="button" onclick="setServicio('Banquete de 3 tiempos')" id="btn-banquete"
+                class="servicio-btn p-4 rounded-sm border border-gold bg-gold text-obsidian text-left transition">
+                <p class="font-serif font-semibold">Banquete de 3 Tiempos</p>
+                <p class="text-xs opacity-85 mt-0.5">Entremés + Entrada/Sopa + Platillo con 3 guarniciones, loza y meseros.</p>
+              </button>
+              <button type="button" onclick="setServicio('Taquiza (5 guisos)')" id="btn-taquiza"
+                class="servicio-btn p-4 rounded-sm border border-ivory/20 bg-obsidian/60 text-ivory text-left hover:border-gold/60 transition">
+                <p class="font-serif font-semibold text-goldLight">Taquiza (5 Guisos)</p>
+                <p class="text-xs text-ivory/75 mt-0.5">Elige 5 guisos de nuestra carta desde 50 personas.</p>
+              </button>
+            </div>
+          </div>
+
+          <!-- Invitados y Fecha -->
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div class="space-y-2">
+              <label for="invitados" class="block text-xs uppercase tracking-[0.16em] text-goldLight font-semibold">
+                2. Número de personas (mínimo 50)
+              </label>
+              <input id="invitados" type="number" min="50" step="10" value="50" oninput="actualizarResumen()"
+                class="w-full bg-obsidian border border-ivory/25 rounded-sm px-4 py-3 text-ivory focus:outline-none focus:border-gold" />
+              <p id="info-meseros" class="text-xs text-goldLight"></p>
+            </div>
+
+            <div class="space-y-2">
+              <label for="fecha-evento" class="block text-xs uppercase tracking-[0.16em] text-goldLight font-semibold">
+                3. Fecha estimada del evento
+              </label>
+              <input id="fecha-evento" type="date" oninput="actualizarResumen()"
+                class="w-full bg-obsidian border border-ivory/25 rounded-sm px-4 py-3 text-ivory focus:outline-none focus:border-gold" />
+            </div>
+          </div>
+
+          <!-- Selecciones para Banquete -->
+          <div id="bloque-banquete" class="space-y-6 border-t border-ivory/10 pt-6">
+            <div class="space-y-2">
+              <label for="sel-entremes" class="block text-xs uppercase tracking-[0.16em] text-goldLight font-semibold">
+                Entremés incluido
+              </label>
+              <select id="sel-entremes" onchange="actualizarResumen()"
+                class="w-full bg-obsidian border border-ivory/25 rounded-sm px-4 py-3 text-sm text-ivory focus:outline-none focus:border-gold"></select>
+            </div>
+
+            <div class="space-y-2">
+              <label for="sel-entrada" class="block text-xs uppercase tracking-[0.16em] text-goldLight font-semibold">
+                Entrada o Sopa incluida
+              </label>
+              <select id="sel-entrada" onchange="actualizarResumen()"
+                class="w-full bg-obsidian border border-ivory/25 rounded-sm px-4 py-3 text-sm text-ivory focus:outline-none focus:border-gold"></select>
+            </div>
+
+            <div class="space-y-2">
+              <label for="sel-platillo" class="block text-xs uppercase tracking-[0.16em] text-goldLight font-semibold">
+                Platillo principal (incluye 3 guarniciones)
+              </label>
+              <select id="sel-platillo" onchange="actualizarResumen()"
+                class="w-full bg-obsidian border border-ivory/25 rounded-sm px-4 py-3 text-sm text-ivory focus:outline-none focus:border-gold"></select>
+            </div>
+
+            <div class="bg-obsidian/80 border border-gold/25 rounded-sm p-4 text-xs text-ivory/80 space-y-1">
+              <p class="font-semibold text-goldLight">Incluido en tu banquete:</p>
+              <p>• 1 Entremés, 1 Entrada/Sopa y 1 Platillo principal con 3 guarniciones.</p>
+              <p>• Montaje con plato, vaso jaibolero y cubierto.</p>
+              <p id="texto-meseros-detalle">• 1 mesero incluido para 50 personas (+1 mesero por cada 50 personas adicionales).</p>
+            </div>
+          </div>
+
+          <!-- Selecciones para Taquiza (5 guisos) -->
+          <div id="bloque-taquiza" class="hidden space-y-4 border-t border-ivory/10 pt-6">
+            <div class="flex items-center justify-between">
+              <label class="block text-xs uppercase tracking-[0.16em] text-goldLight font-semibold">
+                Selecciona 5 guisos para tu taquiza
+              </label>
+              <span id="contador-guisos" class="text-xs font-semibold px-3 py-1 rounded-full bg-obsidian border border-gold/40 text-goldLight">
+                0 / 5 elegidos
+              </span>
+            </div>
+            <div id="grid-guisos-selector" class="grid sm:grid-cols-2 gap-2"></div>
+          </div>
+
+          <!-- Bebidas y Extras -->
+          <div class="space-y-3 border-t border-ivory/10 pt-6">
+            <label class="block text-xs uppercase tracking-[0.16em] text-goldLight font-semibold">
+              Bebidas y servicios adicionales (cotización extra)
+            </label>
+            <p class="text-xs text-ivory/70">
+              * Los paquetes base no incluyen bebidas alcohólicas. Marca si deseas cotizar extras:
+            </p>
+            <div class="space-y-2.5 pt-1 text-sm">
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="checkbox" id="extra-alcohol" onchange="actualizarResumen()" class="w-4 h-4 accent-[#C5A059]" />
+                <span>Solicitar cotización extra de bebidas alcohólicas</span>
+              </label>
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="checkbox" id="extra-barra" onchange="actualizarResumen()" class="w-4 h-4 accent-[#C5A059]" />
+                <span>Solicitar cotización extra de barra de bebidas</span>
+              </label>
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="checkbox" id="extra-meseros" onchange="actualizarResumen()" class="w-4 h-4 accent-[#C5A059]" />
+                <span>Solicitar meseros adicionales / cristalería extra</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Nombre y Notas -->
+          <div class="grid sm:grid-cols-2 gap-4 border-t border-ivory/10 pt-6">
+            <div class="space-y-1.5">
+              <label for="cliente-nombre" class="block text-xs uppercase tracking-wider text-ivory/75">Tu nombre</label>
+              <input id="cliente-nombre" type="text" placeholder="Ej. Carlos Mendoza" oninput="actualizarResumen()"
+                class="w-full bg-obsidian border border-ivory/25 rounded-sm px-4 py-2.5 text-sm text-ivory focus:outline-none focus:border-gold" />
+            </div>
+            <div class="space-y-1.5">
+              <label for="cliente-notas" class="block text-xs uppercase tracking-wider text-ivory/75">Lugar / comentarios</label>
+              <input id="cliente-notas" type="text" placeholder="Ej. Quinta, salón, horario..." oninput="actualizarResumen()"
+                class="w-full bg-obsidian border border-ivory/25 rounded-sm px-4 py-2.5 text-sm text-ivory focus:outline-none focus:border-gold" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Resumen y Envío a WhatsApp -->
+        <div class="lg:col-span-4 bg-ivory text-ink rounded-sm p-6 sm:p-7 space-y-5 shadow-xl">
+          <div class="border-b border-sand pb-3">
+            <p class="text-xs uppercase tracking-[0.18em] text-gold font-semibold">Resumen del Paquete</p>
+            <h3 id="resumen-servicio" class="font-serif text-xl text-ink mt-1">Banquete de 3 tiempos</h3>
+          </div>
+
+          <div id="resumen-cuerpo" class="text-xs sm:text-sm space-y-2.5 text-ink/85"></div>
+
+          <div class="pt-2 space-y-2.5">
+            <a id="btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer"
+              class="w-full block text-center bg-obsidian hover:bg-charcoal text-goldLight font-semibold text-sm py-3.5 px-5 rounded-sm transition">
+              Enviar Cotización por WhatsApp
+            </a>
+            <p class="text-[11px] text-muted text-center">
+              Se abrirá WhatsApp con tu paquete listo para enviar al +52 618 236 6710.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer class="bg-obsidian text-ivory/70 border-t border-ivory/10 py-10 text-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="font-serif tracking-[0.2em] text-goldLight text-sm">CÓNCLAVE</span>
+        <span>· Banquetería, Taquizas, Cristalería y Meseros</span>
+      </div>
+      <div>
+        WhatsApp: <a href="https://wa.me/526182366710" target="_blank" rel="noopener noreferrer" class="text-goldLight hover:underline">+52 618 236 6710</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const WHATSAPP_NUMBER = "526182366710";
+
+    const ENTREMSES = [
+      "Canastillas de totopo con guacamole fresco y toque de limón",
+      "Botana de cacahuates enchilados y nuez tostada con especias",
+      "Rodajas de pepino, zanahoria y jícama con limón, sal y chile suave",
+      "Pan artesanal en rebanadas con mantequilla de hierbas finas",
+      "Tostaditas crujientes con frijol refrito y queso fresco espolvoreado",
+      "Queso panela en cubos con aceite de oliva, orégano y chile seco",
+      "Papas cambray doradas con sal gruesa y toque de romero",
+      "Mini quesadillas de tortilla de maíz con queso fundido",
+      "Totopos con salsa mexicana (pico de gallo) recién preparada",
+      "Palomitas naturales con mantequilla y sal fina al estilo gourmet",
+      "Tabla de quesos nacionales con uvas frescas, nuez tostada y miel ligera",
+      "Mini tostadas de aguacate con queso fresco, microgreens y aceite de oliva",
+      "Brochetas caprese (jitomate cherry, queso y albahaca) con reducción balsámica",
+      "Pan artesanal en rebanadas con dips de mantequilla de hierbas y aceite infusionado",
+      "Vasitos individuales de pepino, jícama y zanahoria con limón y chile suave",
+      "Cubos de queso panela marinados en aceite de oliva con finas hierbas",
+      "Totopos gourmet con guacamole rústico y semillas tostadas",
+      "Mini quesadillas de flor de calabaza con queso, servidas en canastillas",
+      "Tostaditas de frijol negro con crema ligera, queso y brotes frescos",
+      "Papas cambray confitadas con romero y sal gruesa en presentación individual"
+    ];
+
+    const ENTRADAS = [
+      "Consomé de ave doblemente clarificado con perlas de zanahoria y perfume de hierbas finas",
+      "Crema de coliflor sedosa con aceite de trufa blanca y crujiente de puerro",
+      "Bisque de camarón con toque de coñac y crema ligera montada",
+      "Velouté de pollo con champiñones salteados y acabado en mantequilla",
+      "Crema de calabaza de castilla rostizada con notas de nuez moscada y aceite de oliva",
+      "Sopa clara de jitomate con esferas de albahaca y ligera emulsión de aceite de oliva",
+      "Consomé de res concentrado con vegetales baby glaseados y toque de vino tinto",
+      "Crema de espinaca con queso de cabra y crocante de almendra",
+      "Sopa de poro y papa estilo vichyssoise, servida tibia con aceite de cebollín",
+      "Caldo corto de pescado con hierbas aromáticas, tomate cherry y toque cítrico refinado",
+      "Crema de jitomate rostizado al humo con aceite de albahaca y crocante de pan artesanal",
+      "Consomé de pollo clarificado con finas hierbas, juliana de verduras y toque de limón",
+      "Sopa de cebolla gratinada con queso fundido y pan dorado al horno",
+      "Crema de elote tatemado con esencia de epazote y ligera espuma de crema",
+      "Caldo ligero de res con verduras baby y toque de cilantro fresco",
+      "Crema de papa con puerro, terminada con aceite de oliva y pimienta recién molida",
+      "Sopa de tortilla en presentación fina, con julianas crujientes, aguacate y queso",
+      "Caldo de camarón con chile guajillo, perfumado con hierbas y toque cítrico",
+      "Crema de zanahoria rostizada con jengibre y notas sutiles de mantequilla",
+      "Sopa de hongos con fondo ligero, aceite de trufa y crocante de pan rústico",
+      "Sopa de jitomate rostizado con toque de albahaca fresca y crocante de pan artesanal",
+      "Ensalada verde con vinagreta de la casa, nuez tostada y láminas de queso fresco",
+      "Crema de zanahoria con un delicado toque de jengibre y aceite de oliva",
+      "Tostadas de tinga de pollo con crema ligera, queso y brotes frescos",
+      "Ensalada de pepino y jícama con limón, chile suave y hojas de menta",
+      "Queso panela a la plancha con salsa verde y reducción ligera de balsámico",
+      "Esquites salteados con mantequilla, epazote y queso espolvoreado",
+      "Flautas doradas de papa con lechuga, crema y queso fresco",
+      "Croquetas de arroz con queso, acompañadas de salsa de jitomate casera",
+      "Tostadas de frijol negro con aguacate, queso fresco y un toque de aceite de oliva",
+      "Carpaccio de res con láminas de parmesano, aceite de oliva extra virgen y reducción de balsámico",
+      "Tartar de atún fresco con aguacate, emulsión de cítricos y toque de ajonjolí tostado",
+      "Crema de espárragos blancos con crocante de jamón serrano y esencia de trufa",
+      "Ensalada de burrata con jitomates heirloom, albahaca fresca y reducción de balsámico",
+      "Salmón curado en casa con eneldo, acompañado de crema ácida y pan artesanal",
+      "Ravioles de ricotta y espinaca bañados en mantequilla dorada y salvia fresca",
+      "Terrina de foie gras con compota de higos y pan brioche tostado",
+      "Ceviche de robalo con leche de tigre, cebolla morada y brotes frescos",
+      "Crema de hongos silvestres con aceite de trufa y crujiente de parmesano",
+      "Ensalada de pera caramelizada con queso de cabra, nuez tostada y vinagreta de miel"
+    ];
+
+    const PLATILLOS = [
+      "Pechuga de pollo en salsa de crema con champiñones, acompañada de arroz blanco y verduras al vapor",
+      "Lomo de cerdo en salsa de ciruela ligera, con puré de papa y ensalada fresca",
+      "Filete de pollo a la mantequilla con hierbas finas, servido con pasta corta y vegetales salteados",
+      "Medallones de cerdo en salsa de mostaza suave, acompañados de papas al horno y zanahorias glaseadas",
+      "Pechuga rellena de jamón y queso en salsa blanca, con arroz y ensalada verde",
+      "Filete de pescado al limón con mantequilla, acompañado de arroz y verduras al vapor",
+      "Pollo en salsa de jitomate rostizado con toque de albahaca, servido con pasta o arroz",
+      "Lasaña de carne tradicional con ensalada fresca y aderezo ligero",
+      "Pechuga de pollo en salsa de espinaca cremosa, con puré de papa y elote",
+      "Cerdo deshebrado en salsa suave de chile guajillo, acompañado de arroz y frijoles refritos",
+      "Filete de res en reducción de vino tinto, acompañado de puré de papa cremoso y vegetales salteados",
+      "Pechuga de pollo rellena de espinaca y queso, bañada en salsa de crema ligera con hierbas finas",
+      "Salmón a la plancha con costra de ajonjolí, servido con arroz jazmín y vegetales al vapor",
+      "Lomo de cerdo en salsa de ciruela, acompañado de puré de camote y ensalada fresca",
+      "Pasta fettuccine en salsa cremosa de champiñones con toque de parmesano",
+      "Medallones de res con mantequilla de ajo, acompañados de papas cambray y espárragos",
+      "Pechuga de pollo en salsa de limón y alcaparras, con arroz blanco y vegetales salteados",
+      "Filete de pescado en salsa de mantequilla y ajo, con puré de papa y zanahorias glaseadas",
+      "Costillas de cerdo al horno en salsa BBQ artesanal, con elote y ensalada ligera",
+      "Lasagna tradicional de carne con salsa de jitomate y queso gratinado"
+    ];
+
+    const GUISOS = [
+      "Asado de puerco en salsa roja",
+      "Tinga de pollo",
+      "Rajas con crema y elote",
+      "Chicharrón prensado en salsa verde",
+      "Picadillo tradicional",
+      "Bistec a la mexicana",
+      "Pollo en mole rojo",
+      "Cochinita pibil con cebolla morada encurtida",
+      "Barbacoa de res estilo norteño",
+      "Pollo en salsa de chipotle cremoso",
+      "Carnitas estilo Michoacán",
+      "Alambre de res (con pimiento, cebolla y tocino)",
+      "Papa con chorizo",
+      "Frijoles charros",
+      "Huevo en salsa (roja o verde)",
+      "Calabacitas a la mexicana",
+      "Nopales guisados con jitomate"
+    ];
+
+    let servicioActual = "Banquete de 3 tiempos";
+    let guisosSeleccionados = [];
+
+    function llenarCatalogos() {
+      document.getElementById("lista-entremeses").innerHTML = ENTREMSES.map(i => `<li>• ${i}</li>`).join("");
+      document.getElementById("lista-entradas").innerHTML = ENTRADAS.map(i => `<li>• ${i}</li>`).join("");
+      document.getElementById("lista-platillos").innerHTML = PLATILLOS.map(i => `<li>• ${i}</li>`).join("");
+      document.getElementById("lista-guisos").innerHTML = GUISOS.map((g, idx) =>
+        `<div class="bg-white border border-sand px-3.5 py-2 rounded-sm flex items-center gap-2"><span class="text-gold font-semibold text-xs">${idx + 1}.</span><span>${g}</span></div>`
+      ).join("");
+
+      document.getElementById("sel-entremes").innerHTML = ENTREMSES.map(i => `<option value="${i}">${i}</option>`).join("");
+      document.getElementById("sel-entrada").innerHTML = ENTRADAS.map(i => `<option value="${i}">${i}</option>`).join("");
+      document.getElementById("sel-platillo").innerHTML = PLATILLOS.map(i => `<option value="${i}">${i}</option>`).join("");
+
+      const grid = document.getElementById("grid-guisos-selector");
+      grid.innerHTML = GUISOS.map(guiso => {
+        const safeId = guiso.replace(/[^a-zA-Z0-9]/g, "");
+        return `
+          <button type="button" id="chip-${safeId}" onclick="toggleGuiso('${guiso.replace(/'/g, "\\'")}', '${safeId}')"
+            class="text-left text-xs sm:text-sm px-3 py-2 rounded-sm border border-ivory/20 bg-obsidian/70 text-ivory/85 hover:border-gold/60 transition">
+            ${guiso}
+          </button>
+        `;
+      }).join("");
+    }
+
+    function setServicio(tipo) {
+      servicioActual = tipo;
+      const esBanquete = tipo === "Banquete de 3 tiempos";
+
+      document.getElementById("bloque-banquete").classList.toggle("hidden", !esBanquete);
+      document.getElementById("bloque-taquiza").classList.toggle("hidden", esBanquete);
+
+      const btnBanq = document.getElementById("btn-banquete");
+      const btnTaq = document.getElementById("btn-taquiza");
+
+      if (esBanquete) {
+        btnBanq.className = "servicio-btn p-4 rounded-sm border border-gold bg-gold text-obsidian text-left transition";
+        btnTaq.className = "servicio-btn p-4 rounded-sm border border-ivory/20 bg-obsidian/60 text-ivory text-left hover:border-gold/60 transition";
+      } else {
+        btnTaq.className = "servicio-btn p-4 rounded-sm border border-gold bg-gold text-obsidian text-left transition";
+        btnBanq.className = "servicio-btn p-4 rounded-sm border border-ivory/20 bg-obsidian/60 text-ivory text-left hover:border-gold/60 transition";
+      }
+
+      actualizarResumen();
+    }
+
+    function toggleGuiso(guiso, safeId) {
+      const idx = guisosSeleccionados.indexOf(guiso);
+      const chip = document.getElementById(`chip-${safeId}`);
+
+      if (idx > -1) {
+        guisosSeleccionados.splice(idx, 1);
+        chip.classList.remove("chip-selected");
+      } else {
+        if (guisosSeleccionados.length >= 5) {
+          alert("La taquiza incluye 5 guisos. Quita uno si deseas cambiarlo.");
+          return;
+        }
+        guisosSeleccionados.push(guiso);
+        chip.classList.add("chip-selected");
+      }
+
+      document.getElementById("contador-guisos").textContent = `${guisosSeleccionados.length} / 5 elegidos`;
+      actualizarResumen();
+    }
+
+    function calcularMeserosIncluidos(personas) {
+      const total = Math.max(50, Number(personas) || 50);
+      return Math.ceil(total / 50);
+    }
+
+    function actualizarResumen() {
+      const inputInv = document.getElementById("invitados");
+      let personas = parseInt(inputInv.value, 10);
+      if (isNaN(personas) || personas < 50) {
+        personas = 50;
+      }
+
+      const fecha = document.getElementById("fecha-evento").value || "Por definir";
+      const nombre = document.getElementById("cliente-nombre").value.trim() || "Cliente";
+      const notas = document.getElementById("cliente-notas").value.trim();
+
+      const extraAlcohol = document.getElementById("extra-alcohol").checked;
+      const extraBarra = document.getElementById("extra-barra").checked;
+      const extraMeseros = document.getElementById("extra-meseros").checked;
+
+      const meserosIncluidos = calcularMeserosIncluidos(personas);
+      document.getElementById("info-meseros").textContent =
+        servicioActual === "Banquete de 3 tiempos"
+          ? `Incluye ${meserosIncluidos} ${meserosIncluidos === 1 ? "mesero" : "meseros"} (1 base de 50 + 1 por cada 50 personas adicionales).`
+          : "Atención desde 50 personas.";
+
+      document.getElementById("resumen-servicio").textContent = servicioActual;
+
+      let htmlResumen = `
+        <p><strong>Personas:</strong> ${personas} (mín. 50)</p>
+        <p><strong>Fecha estimada:</strong> ${fecha}</p>
+      `;
+
+      let lineasWhatsApp = [
+        `Hola CÓNCLAVE, quiero cotizar un evento:`,
+        `• *Nombre:* ${nombre}`,
+        `• *Servicio:* ${servicioActual}`,
+        `• *Personas:* ${personas} (mínimo 50)`,
+        `• *Fecha estimada:* ${fecha}`
+      ];
+
+      if (servicioActual === "Banquete de 3 tiempos") {
+        const entremes = document.getElementById("sel-entremes").value;
+        const entrada = document.getElementById("sel-entrada").value;
+        const platillo = document.getElementById("sel-platillo").value;
+
+        htmlResumen += `
+          <p><strong>Entremés:</strong> ${entremes}</p>
+          <p><strong>Entrada/Sopa:</strong> ${entrada}</p>
+          <p><strong>Platillo (3 guarniciones):</strong> ${platillo}</p>
+          <p><strong>Loza:</strong> Plato, vaso jaibolero y cubierto</p>
+          <p><strong>Meseros incluidos:</strong> ${meserosIncluidos}</p>
+        `;
+
+        lineasWhatsApp.push(
+          `• *Entremés:* ${entremes}`,
+          `• *Entrada/Sopa:* ${entrada}`,
+          `• *Platillo (3 guarniciones):* ${platillo}`,
+          `• *Montaje:* Plato, vaso jaibolero y cubierto`,
+          `• *Meseros incluidos:* ${meserosIncluidos}`
+        );
+      } else {
+        const guisosTexto = guisosSeleccionados.length > 0 ? guisosSeleccionados.join(", ") : "Por elegir (5 guisos)";
+        htmlResumen += `<p><strong>Guisos (${guisosSeleccionados.length}/5):</strong> ${guisosTexto}</p>`;
+        lineasWhatsApp.push(`• *Guisos (${guisosSeleccionados.length}/5):* ${guisosTexto}`);
+      }
+
+      const extras = [];
+      if (extraAlcohol) extras.push("Bebidas alcohólicas (cotización extra)");
+      if (extraBarra) extras.push("Barra de bebidas (cotización extra)");
+      if (extraMeseros) extras.push("Meseros / cristalería adicional");
+
+      htmlResumen += `
+        <p class="text-xs text-muted pt-1 border-t border-sand">
+          <strong>Bebidas:</strong> Sin alcohol en paquete base.${extras.length ? " Extras: " + extras.join(", ") + "." : ""}
+        </p>
+      `;
+
+      lineasWhatsApp.push(
+        `• *Bebidas alcohólicas:* No incluidas en paquete base`,
+        `• *Extras solicitados:* ${extras.length ? extras.join(" | ") : "Ninguno por ahora"}`
+      );
+
+      if (notas) {
+        htmlResumen += `<p><strong>Notas:</strong> ${notas}</p>`;
+        lineasWhatsApp.push(`• *Notas:* ${notas}`);
+      }
+
+      document.getElementById("resumen-cuerpo").innerHTML = htmlResumen;
+      const mensajeCodificado = encodeURIComponent(lineasWhatsApp.join("\n"));
+      document.getElementById("btn-whatsapp").href = `https://wa.me/${WHATSAPP_NUMBER}?text=${mensajeCodificado}`;
+    }
+
+    llenarCatalogos();
+    actualizarResumen();
+  </script>
+</body>
+</html>
